@@ -10,6 +10,27 @@ namespace WhatsNewInCS8
 
     class Patterns
     {
+        private enum AgeGroup
+        {
+            Under12, Under18, Under40, Above40
+        }
+
+        private class Person
+        {
+            public Person(string name, int age, AgeGroup ageGroup)
+            {
+                Name = name;
+                Age = age;
+                AgeGroup = ageGroup;
+            }
+
+            public string Name { get; set; }
+
+            public int Age { get; set; }
+
+            public AgeGroup AgeGroup { get; set; }
+        }
+
         private class RGBColor
         {
             public RGBColor(uint red, uint green, uint blue)
@@ -36,7 +57,29 @@ namespace WhatsNewInCS8
         public static void Run()
         {
             DemoPatternsWithSwitchExpression();
+            DemoPropertyPattern();
             Console.WriteLine($"Read the code for {typeof(Patterns)} along with comments for details.");
+        }
+
+        static void DemoPropertyPattern()
+        {
+            // Patterns can be matched on property names. Matching does not have to be on a single property
+
+            var advice = GetAdviceForPerson(new Person("A person", 19, AgeGroup.Under40));
+            var advice2 = GetAdviceForPerson(new Person("arslan", 19, AgeGroup.Above40));
+            Console.WriteLine(advice);
+            Console.WriteLine(advice2);
+
+            string GetAdviceForPerson(Person person)
+            {
+                return person switch
+                {
+                    { AgeGroup: AgeGroup.Under12 } => "Enjoy while you can!",
+                    { AgeGroup: AgeGroup.Under18 } => "Start getting responsible",
+                    { AgeGroup: AgeGroup.Under40 } => "Start getting some rest",
+                    { Name: "arslan" } => "You are a special case"
+                };
+            }
         }
 
         static void DemoPatternsWithSwitchExpression()
@@ -54,7 +97,8 @@ namespace WhatsNewInCS8
             //      break keyword is not mandatory to escape out of switch
             //      default keyword is replaced with a _ discard
             //      the bodies are expressions, not statements
-            //      The whole expression is a single statment and needs to be terminated with a ;
+            //      the whole expression is a single statment and needs to be terminated with a ;
+            //      switch expression does not need to be exhastive whereas statement needs to be exhaustive
             RGBColor GetRGBColorFromRainbowColor(Rainbow rainbowColor)
             {
                 var rgbColor = rainbowColor switch
