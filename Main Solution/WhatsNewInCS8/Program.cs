@@ -10,6 +10,15 @@ namespace WhatsNewInCS8
     {
         static void Main(string[] args)
         {
+            ReadonlyMembers.Run();
+
+            Pause();
+        }
+
+        static void Pause()
+        {
+            Console.Write($"Press any key to continue...");
+            Console.ReadKey(false);
         }
     }
 }
