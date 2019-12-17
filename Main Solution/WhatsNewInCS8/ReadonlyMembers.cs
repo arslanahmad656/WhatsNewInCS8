@@ -87,7 +87,7 @@ namespace WhatsNewInCS8
         public static void Run()
         {
             DemoReadonlyRef();
-            Console.WriteLine($"Read the code for {typeof(Point)} along with comments for details.");         
+            Console.WriteLine($"Read the code for {typeof(Point)} along with comments for details.");    
         }
 
         static void DemoReadonlyRef()

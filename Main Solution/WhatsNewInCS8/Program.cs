@@ -10,7 +10,8 @@ namespace WhatsNewInCS8
     {
         static void Main(string[] args)
         {
-            ReadonlyMembers.Run();
+            //ReadonlyMembers.Run();
+            Patterns.Run();
 
             Pause();
         }
