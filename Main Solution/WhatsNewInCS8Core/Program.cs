@@ -6,7 +6,16 @@ namespace WhatsNewInCS8Core
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            DefaultInterfaceImplementation.Run();
+
+
+            Pause();
+        }
+
+        static void Pause()
+        {
+            Console.Write($"Press any key to continue...");
+            Console.ReadKey(false);
         }
     }
 }

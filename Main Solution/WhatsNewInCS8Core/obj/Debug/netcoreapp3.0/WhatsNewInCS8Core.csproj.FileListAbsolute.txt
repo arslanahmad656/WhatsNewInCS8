@@ -1,0 +1,11 @@
+C:\Users\Administrator.ERISED\source\repos\WhatsNewInCS8\Main Solution\WhatsNewInCS8Core\bin\Debug\netcoreapp3.0\WhatsNewInCS8Core.exe
+C:\Users\Administrator.ERISED\source\repos\WhatsNewInCS8\Main Solution\WhatsNewInCS8Core\bin\Debug\netcoreapp3.0\WhatsNewInCS8Core.deps.json
+C:\Users\Administrator.ERISED\source\repos\WhatsNewInCS8\Main Solution\WhatsNewInCS8Core\bin\Debug\netcoreapp3.0\WhatsNewInCS8Core.runtimeconfig.json
+C:\Users\Administrator.ERISED\source\repos\WhatsNewInCS8\Main Solution\WhatsNewInCS8Core\bin\Debug\netcoreapp3.0\WhatsNewInCS8Core.runtimeconfig.dev.json
+C:\Users\Administrator.ERISED\source\repos\WhatsNewInCS8\Main Solution\WhatsNewInCS8Core\bin\Debug\netcoreapp3.0\WhatsNewInCS8Core.dll
+C:\Users\Administrator.ERISED\source\repos\WhatsNewInCS8\Main Solution\WhatsNewInCS8Core\bin\Debug\netcoreapp3.0\WhatsNewInCS8Core.pdb
+C:\Users\Administrator.ERISED\source\repos\WhatsNewInCS8\Main Solution\WhatsNewInCS8Core\obj\Debug\netcoreapp3.0\WhatsNewInCS8Core.csprojAssemblyReference.cache
+C:\Users\Administrator.ERISED\source\repos\WhatsNewInCS8\Main Solution\WhatsNewInCS8Core\obj\Debug\netcoreapp3.0\WhatsNewInCS8Core.AssemblyInfoInputs.cache
+C:\Users\Administrator.ERISED\source\repos\WhatsNewInCS8\Main Solution\WhatsNewInCS8Core\obj\Debug\netcoreapp3.0\WhatsNewInCS8Core.AssemblyInfo.cs
+C:\Users\Administrator.ERISED\source\repos\WhatsNewInCS8\Main Solution\WhatsNewInCS8Core\obj\Debug\netcoreapp3.0\WhatsNewInCS8Core.dll
+C:\Users\Administrator.ERISED\source\repos\WhatsNewInCS8\Main Solution\WhatsNewInCS8Core\obj\Debug\netcoreapp3.0\WhatsNewInCS8Core.pdb
