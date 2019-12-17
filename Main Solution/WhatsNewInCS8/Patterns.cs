@@ -24,6 +24,12 @@ namespace WhatsNewInCS8
                 AgeGroup = ageGroup;
             }
 
+            public void Deconstruct(out string name, out int age) 
+                => (name, age) = (Name, Age);
+
+            public void Deconstruct(out string name, out int age, out AgeGroup ageGroup) 
+                => (name, age, ageGroup) = (Name, Age, AgeGroup);
+
             public string Name { get; set; }
 
             public int Age { get; set; }
@@ -59,7 +65,36 @@ namespace WhatsNewInCS8
             DemoPatternsWithSwitchExpression();
             DemoPropertyPattern();
             DemoTuplePattern();
+            DemoPositionalPattern();
             Console.WriteLine($"Read the code for {typeof(Patterns)} along with comments for details.");
+        }
+
+        static void DemoPositionalPattern()
+        {
+            var result1 = GetResult(new Person("arslan", 26, AgeGroup.Above40));
+            var result2 = GetResult(new Person("arslan", 27, AgeGroup.Above40));
+            string result3 = null;
+            try
+            {
+                result3 = GetResult(new Person("dsfds", 11, AgeGroup.Above40));
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"{ex.GetType()}: {ex.Message}");
+            }
+
+            Console.WriteLine(result1);
+            Console.WriteLine(result2);
+            Console.WriteLine(result3);
+
+            static string GetResult(Person person)
+            {
+                return person switch
+                {
+                    ("arslan", 26) => "Yes! That's me!",
+                    ("arslan", 27, AgeGroup.Above40) => "Nupp! That's not me"
+                };
+            }
         }
 
         static void DemoTuplePattern()
