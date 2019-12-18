@@ -15,7 +15,7 @@ namespace WhatsNewInCS8
             AdvancedPatternMatching.Run();
             UsingDeclarations.Run();
             StaticLocalFunctions.Run();
-
+            RefStructs.Run();
 
             Pause();
         }
