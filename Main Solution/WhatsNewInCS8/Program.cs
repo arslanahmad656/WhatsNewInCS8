@@ -8,11 +8,13 @@ namespace WhatsNewInCS8
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             ReadonlyMembers.Run();
             Patterns.Run();
             AdvancedPatternMatching.Run();
+            UsingDeclarations.Run();
+
 
             Pause();
         }
