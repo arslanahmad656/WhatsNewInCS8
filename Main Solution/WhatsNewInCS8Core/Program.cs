@@ -8,6 +8,7 @@ namespace WhatsNewInCS8Core
         {
             DefaultInterfaceImplementation.Run();
             NullableReferenceTypes.Run();
+            IndicesAndRanges.Run();
 
 
             Pause();
