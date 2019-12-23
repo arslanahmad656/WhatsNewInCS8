@@ -7,6 +7,7 @@ namespace WhatsNewInCS8Core
         static void Main(string[] args)
         {
             DefaultInterfaceImplementation.Run();
+            NullableReferenceTypes.Run();
 
 
             Pause();

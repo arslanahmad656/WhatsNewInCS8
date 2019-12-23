@@ -3,6 +3,13 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.0</TargetFramework>
+    <!-- The following enables the nullable annotation context. Possible values are:
+      enable:       annotation context enabled; warnings context enabled
+      disable:      annotation context disabled; warnings context disabled  
+      warnings:     annotation context disabled; warnings context enabled
+      annotations:  annotation context enabled; warnings context disabled
+    -->
+    <Nullable>enable</Nullable>
   </PropertyGroup>
 
 </Project>
