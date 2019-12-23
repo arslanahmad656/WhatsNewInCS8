@@ -16,6 +16,7 @@ namespace WhatsNewInCS8
             UsingDeclarations.Run();
             StaticLocalFunctions.Run();
             RefStructs.Run();
+            NullCoalescingOperator.Run();
 
             Pause();
         }

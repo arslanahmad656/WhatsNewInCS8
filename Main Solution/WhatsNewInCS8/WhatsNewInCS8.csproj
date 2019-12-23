@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AdvancedPatternMatching.cs" />
+    <Compile Include="NullCoalescingOperator.cs" />
     <Compile Include="Patterns.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
